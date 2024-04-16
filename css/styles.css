@@ -11,3 +11,18 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+}
+.navbar {
+  background-color: black;
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link {
+  color: aliceblue !important;
+}
