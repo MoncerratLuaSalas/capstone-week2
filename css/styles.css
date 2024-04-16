@@ -3,18 +3,8 @@ body {
   background-color: black;
 }
 
-h1 {
-  text-align: center;
-  color: aliceblue;
-}
-
-h2 {
-  text-align: center;
-  color: aliceblue;
-}
-
 .c-item {
-  height: 600px;
+  height: 590px;
 }
 
 .c-img {
