@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Steal Their Look: The Hobbit</title>
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,43 +11,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
+    <container>
+      <nav class="navbar navbar-expand-lg" data-bs-theme=" dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Steal Their Look</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="product-page.html"
-                  >Shop</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="user-registration.html"
-                  >Don't Have an Account?</a
-                >
+                <a class="nav-link" href="#">New?</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -57,39 +44,53 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Shop Characters
+                  Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Gandalf</a></li>
+                  <li><a class="dropdown-item" href="#">Bard</a></li>
                   <li><a class="dropdown-item" href="#">Bilbo</a></li>
+                  <li><a class="dropdown-item" href="#">Gandalf</a></li>
                   <li><a class="dropdown-item" href="#">Legolas</a></li>
+                  <li><a class="dropdown-item" href="#">Thorin</a></li>
+                  <li><a class="dropdown-item" href="#">Thranduil</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop All Characters</a>
+                  </li>
                 </ul>
               </li>
+              <a
+                class="btn btn-outline-warning"
+                href="check-out.html"
+                role="button"
+                >View Cart</a
+              >
             </ul>
+            <a class="btn btn-outline-light" href="login.html" role="button"
+              >Login</a
+            >
           </div>
         </div>
       </nav>
-    </header>
-    <main>
-      <body class="bg-light">
+      <body class="backgrouond-color: black">
         <div class="container">
           <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" />
-            <h1 class="check-out">Finish Stealing the Fit!</h1>
-            <h2>Checkout form</h2>
-            <p class="lead">
-              Fill me out to own the outfit you chose! You're gonna look so
-              good. Maybe you'll have have big feet or a white beard. Whatever
-              you chose, you will be serving high fashion.
+            <h1 class="c-checkout">Steal Their Look</h1>
+            <h2 class="c-checkout">You're almost there!</h2>
+            <p class="lead c-checkout">
+              Drop your card info in the form below and your swag levels will be
+              off the charts. I promise you, people will not look at you funny
+              whatsoever. Matter of fact, they'll as you for the link for your
+              outfit. You will look that good.
             </p>
           </div>
 
-          <div class="row">
+          <div class="row c-checkout">
             <div class="col-md-4 order-md-2 mb-4">
               <h4
                 class="d-flex justify-content-between align-items-center mb-3"
               >
-                <span class="text-muted">Your cart</span>
+                <span class="c-checkout">Your cart</span>
                 <span class="badge badge-secondary badge-pill">3</span>
               </h4>
               <ul class="list-group mb-3">
@@ -98,18 +99,9 @@
                 >
                   <div>
                     <h6 class="my-0">Bilbo Baggins</h6>
-                    <small class="text-muted">Lil Hobbit Man</small>
+                    <small class="text-muted">Short King Fit</small>
                   </div>
                   <span class="text-muted">$Free.99</span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between lh-condensed"
-                >
-                  <div>
-                    <h6 class="my-0">Gandalf</h6>
-                    <small class="text-muted">Old Man</small>
-                  </div>
-                  <span class="text-muted">$0.50</span>
                 </li>
                 <li
                   class="list-group-item d-flex justify-content-between lh-condensed"
@@ -121,11 +113,20 @@
                   <span class="text-muted">$1,000,000</span>
                 </li>
                 <li
+                  class="list-group-item d-flex justify-content-between lh-condensed"
+                >
+                  <div>
+                    <h6 class="my-0">Gandalf</h6>
+                    <small class="text-muted">Old Man</small>
+                  </div>
+                  <span class="text-muted">$0.50</span>
+                </li>
+                <li
                   class="list-group-item d-flex justify-content-between bg-light"
                 >
                   <div class="text-success">
                     <h6 class="my-0">Promo code</h6>
-                    <small>ILIKECHEESE</small>
+                    <small>ILOVECHEESE</small>
                   </div>
                   <span class="text-success">-$5</span>
                 </li>
@@ -143,7 +144,7 @@
                     placeholder="Promo code"
                   />
                   <div class="input-group-append">
-                    <button type="submit" class="btn btn-secondary">
+                    <button type="submit" class="btn btn-warning">
                       Redeem
                     </button>
                   </div>
@@ -152,7 +153,7 @@
             </div>
             <div class="col-md-8 order-md-1">
               <h4 class="mb-3">Billing address</h4>
-              <form class="needs-validation" novalidate="">
+              <form class="needs-validation was-validated" novalidate="">
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -205,7 +206,7 @@
 
                 <div class="mb-3">
                   <label for="email"
-                    >Email <span class="text-muted">(Optional)</span></label
+                    >Email <span class="c-checkout">(Optional)</span></label
                   >
                   <input
                     type="email"
@@ -234,7 +235,7 @@
 
                 <div class="mb-3">
                   <label for="address2"
-                    >Address 2 <span class="text-muted">(Optional)</span></label
+                    >Address 2 <span class="c-checkout">(Optional)</span></label
                   >
                   <input
                     type="text"
@@ -345,7 +346,7 @@
                       required=""
                     />
                     <label class="custom-control-label" for="paypal"
-                      >Paypal</label
+                      >PayPal</label
                     >
                   </div>
                 </div>
@@ -391,7 +392,7 @@
                     <div class="invalid-feedback">Expiration date required</div>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="cc-expiration">CVV</label>
+                    <label for="cc-cvv">CVV</label>
                     <input
                       type="text"
                       class="form-control"
@@ -410,8 +411,8 @@
             </div>
           </div>
 
-          <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">© 2017-2018 Monch Enterprises</p>
+          <footer class="my-5 pt-5 c-checkout text-center text-small">
+            <p class="mb-1">© 2017-2020 Monch Enterprises</p>
             <ul class="list-inline">
               <li class="list-inline-item"><a href="#">Privacy</a></li>
               <li class="list-inline-item"><a href="#">Terms</a></li>
@@ -419,63 +420,23 @@
             </ul>
           </footer>
         </div>
-
-        <!-- Bootstrap core JavaScript
-            ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
         <script
-          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
           crossorigin="anonymous"
         ></script>
         <script>
           window.jQuery ||
             document.write(
-              '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+              '<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>'
             );
         </script>
-        <script src="../../assets/js/vendor/popper.min.js"></script>
-        <script src="../../dist/js/bootstrap.min.js"></script>
-        <script src="../../assets/js/vendor/holder.min.js"></script>
-        <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-          (function () {
-            "use strict";
-
-            window.addEventListener(
-              "load",
-              function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName("needs-validation");
-
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(
-                  forms,
-                  function (form) {
-                    form.addEventListener(
-                      "submit",
-                      function (event) {
-                        if (form.checkValidity() === false) {
-                          event.preventDefault();
-                          event.stopPropagation();
-                        }
-                        form.classList.add("was-validated");
-                      },
-                      false
-                    );
-                  }
-                );
-              },
-              false
-            );
-          })();
-        </script>
-      </body>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+        <script
+          src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"
+        ></script>
+        <script src="form-validation.js"></script></body
+    ></container>
   </body>
 </html>

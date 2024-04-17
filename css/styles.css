@@ -1,5 +1,5 @@
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: black;
 }
 
@@ -16,15 +16,6 @@ h1 {
   color: aliceblue;
   text-align: center;
   padding: 20px;
-}
-.navbar {
-  background-color: black;
-}
-
-.navbar-text,
-.navbar-brand,
-.nav-link {
-  color: aliceblue !important;
 }
 
 .c-list {
@@ -49,4 +40,14 @@ h1 {
 
 .login {
   color: white;
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link {
+  color: aliceblue !important;
+}
+
+.c-checkout {
+  color: aliceblue;
 }

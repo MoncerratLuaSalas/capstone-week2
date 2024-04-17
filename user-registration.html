@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Create an Account</title>
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,38 +14,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
+    <container>
+      <nav class="navbar navbar-expand-lg" data-bs-theme=" dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Steal Their Look</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Don't Have an Account?</a>
+                <a class="nav-link" href="#">New?</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -55,15 +50,31 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Shop Characters
+                  Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Gandalf</a></li>
+                  <li><a class="dropdown-item" href="#">Bard</a></li>
                   <li><a class="dropdown-item" href="#">Bilbo</a></li>
+                  <li><a class="dropdown-item" href="#">Gandalf</a></li>
                   <li><a class="dropdown-item" href="#">Legolas</a></li>
+                  <li><a class="dropdown-item" href="#">Thorin</a></li>
+                  <li><a class="dropdown-item" href="#">Thranduil</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop All Characters</a>
+                  </li>
                 </ul>
               </li>
+              <a
+                class="btn btn-outline-light"
+                href="check-out.html"
+                role="button"
+                >View Cart</a
+              >
             </ul>
+            <a class="btn btn-outline-light" href="login.html" role="button"
+              >Login</a
+            >
           </div>
         </div>
       </nav>
