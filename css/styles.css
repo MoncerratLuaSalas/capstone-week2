@@ -26,3 +26,27 @@ h1 {
 .nav-link {
   color: aliceblue !important;
 }
+
+.c-list {
+  height: 100%;
+}
+
+.c-group {
+  max-width: 480px;
+  margin: auto;
+  color: aliceblue;
+  padding-top: 40px;
+}
+
+.check-out {
+  color: black;
+}
+
+.sign-in {
+  text-align: center;
+  color: white;
+}
+
+.login {
+  color: white;
+}
