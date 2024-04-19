@@ -50,6 +50,8 @@ h1 {
 
 .c-checkout {
   color: aliceblue;
+  margin: auto;
+  max-width: 90%;
 }
 
 .new-user {
@@ -67,4 +69,13 @@ h1 {
 
 .clmn-spc {
   padding: 10px;
+}
+
+.nice-nice {
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+  max-width: 50%;
+  font-size: 25px;
+  padding-top: 40px;
 }
