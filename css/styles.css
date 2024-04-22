@@ -88,3 +88,8 @@ h1 {
 .opt-color {
   color: aliceblue !important;
 }
+
+.chk-bg-size {
+  max-width: 90%;
+  margin: auto;
+}
